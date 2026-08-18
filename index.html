@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>A Midsummer Night's Dream | Eng114 Sec:1 Drama Showcase</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='0.9em' font-size='90'%3E%F0%9F%A7%9A%3C/text%3E%3C/svg%3E" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- Drifting firefly / sparkle field, decorative only -->
+<div class="fireflies" aria-hidden="true">
+  <span></span><span></span><span></span><span></span><span></span>
+  <span></span><span></span><span></span><span></span><span></span>
+</div>
+
+<header class="site-header">
+  <div class="brand">
+    <img src="bracu-logo-white.png" alt="BRACU logo" class="uni-logo" />
+    <span class="brand-text">Eng114 · Sec 1</span>
+  </div>
+  <nav class="site-nav">
+    <a href="index.html" class="is-active">Home</a>
+    <a href="play.html">The Play</a>
+    <a href="gallery.html">Rehearsals</a>
+    <a href="game.html">Game</a>
+    <a href="ticket.html" class="nav-cta">Get Ticket</a>
+  </nav>
+</header>
+
+<main>
+
+  <!-- ================= HERO / HOME ================= -->
+  <section id="home" class="hero">
+    <p class="eyebrow">A Forest. A Moonlit Night. A Play Within a Play.</p>
+    <h1 class="hero-title">A Midsummer<br>Night's Dream</h1>
+    <p class="hero-sub">Eng114 &middot; Section 1 Drama Showcase</p>
+    <div class="event-meta" aria-label="Showcase schedule">
+      <span class="event-pill">Aug 29th</span>
+      <span class="event-pill">11AM</span>
+    </div>
+    <div class="countdown-wrap" aria-live="polite">
+      <p class="countdown-label">Countdown to Curtain Rise</p>
+      <div class="countdown" id="countdown" role="timer">
+        <div class="countdown-unit"><strong id="countdownDays">--</strong><span>Days</span></div>
+        <div class="countdown-unit"><strong id="countdownHours">--</strong><span>Hours</span></div>
+        <div class="countdown-unit"><strong id="countdownMinutes">--</strong><span>Minutes</span></div>
+        <div class="countdown-unit"><strong id="countdownSeconds">--</strong><span>Seconds</span></div>
+      </div>
+    </div>
+
+    <div class="hero-actions">
+      <a href="ticket.html" class="btn btn-primary">Get Ticket ✦</a>
+      <button id="ambientToggle" class="btn btn-ghost" type="button">
+        <span id="ambientIcon">🎵</span> <span id="ambientLabel">Play Music</span>
+      </button>
+    </div>
+
+    <!--
+      NOTE FOR USER: Pixabay has royalty-free ambient tracks that fit perfectly here.
+      Search Pixabay for something like "forest night ambience", "magical fairy forest",
+      or "enchanted forest ambient", then download an MP3 and save it as:
+      alban_gogh-lonely-fairyx27s-lament-209126.mp3
+      The player below is already wired up to it.
+    -->
+    <div class="hero-motif" aria-hidden="true">🌙 🧚 🌸 🍄 🦋</div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <p>Eng114 · Section 1 Drama Showcase · "The course of true love never did run smooth."</p>
+</footer>
+
+<script type="module" src="script.js"></script>
+</body>
+</html>
